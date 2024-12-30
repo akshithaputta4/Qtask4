@@ -1,0 +1,103 @@
+body {
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color:lightgrey;
+  height: 100vh;
+}
+
+.container {
+  background:linear-gradient(to bottom,#7f7f4e,#4f4b7e);
+  padding: 20px;
+  border-radius: 15px;  
+  width: 350px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.inputcontainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  width: 75%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#add-button {
+  width: 20%;
+  background-color: green;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-button:hover {
+  background-color: darkgreen;
+}
+
+#todo-list {
+  margin: 0;
+  padding: 0;
+}
+
+.todocard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.completed .todoSpan {
+  text-decoration: line-through;
+}
+
+.todoSpan {
+  color: white;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.completebutton, .deletebutton {
+  border: none;
+  padding: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.completebutton {
+  background-color: green;
+  color: white;
+  margin-right: 10px;
+}
+
+.deletebutton {
+  background-color: red;
+  color: white;
+}
+
+
+.summary {
+  margin-top: 20px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
