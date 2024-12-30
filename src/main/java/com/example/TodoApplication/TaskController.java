@@ -31,7 +31,7 @@ public class TaskController {
     @GetMapping("/getAllTasks")
     public ResponseEntity<List<Todo>> getTasks() {
         List<Todo> tasks = taskService.getAllTasks();
-        return ResponseEntity.ok(tasks);  // Return all tasks
+        return ResponseEntity.ok(tasks);  
     }
 
     @PutMapping("/updateTask/{id}")
